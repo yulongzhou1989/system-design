@@ -1,0 +1,27 @@
+Scalability: service more users
+
+	1. Vertical scaling
+		- 
+	2. Horizontal scaling 
+		-- more machine (throwing money), multiple servers
+		-- load balancer - public ip
+				other servers - private ips
+				-busy/unbusy server / functional / 
+				round dropping (BIND)
+					G:simple implement
+					B:not balance/caching issue
+				session - store in the same server
+				RAID 0 - 2 identical hard drives - strip data - 2 times speed G:performance
+				RAID 1 - mirror data - G: robust
+				RAID 10 - 4 drives
+				RAID 5 - 1 drive redundency, 
+				RAID 6 - any drive can die, and have copy
+			Implement:
+				Software:
+					ELB, HAProxy, LVS..
+				Hardware:
+					Cisco, Critix F5, Barracuda
+			Sticky session: multiple time, with same backend server
+	=====50m====
+			
+					
